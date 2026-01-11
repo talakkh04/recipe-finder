@@ -2,8 +2,6 @@
 
 A responsive web application that helps users discover recipes based on available ingredients. Built with vanilla JavaScript and integrated with the Spoonacular API.
 
-![Recipe Finder Screenshot](https://via.placeholder.com/800x400.png?text=Recipe+Finder+Screenshot)
-
 ## ✨ Features
 - 🔍 **Ingredient-based search** - Find recipes with what you have
 - 🥗 **Advanced filtering** - By diet, cuisine, and meal type
