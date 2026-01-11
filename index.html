@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder | Find Your Perfect Meal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">🍳 RecipeFinder</a>
+            <div class="nav-links">
+                <a href="#search">Search</a>
+                <a href="#favorites">Favorites</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Find Recipes for What You Have</h1>
+            <p>Search by ingredients, diet, or cuisine. Discover new meals!</p>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section" id="search">
+        <div class="container">
+            <div class="search-box">
+                <div class="input-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="ingredientInput" placeholder="Enter ingredients (e.g., chicken, rice, tomato)">
+                    <button id="searchBtn">Find Recipes</button>
+                </div>
+                
+                <div class="filters">
+                    <select id="dietFilter">
+                        <option value="">Any Diet</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="vegan">Vegan</option>
+                        <option value="gluten-free">Gluten Free</option>
+                        <option value="keto">Keto</option>
+                    </select>
+                    
+                    <select id="cuisineFilter">
+                        <option value="">Any Cuisine</option>
+                        <option value="italian">Italian</option>
+                        <option value="mexican">Mexican</option>
+                        <option value="asian">Asian</option>
+                        <option value="indian">Indian</option>
+                    </select>
+                    
+                    <select id="mealTypeFilter">
+                        <option value="">Any Meal</option>
+                        <option value="main course">Main Course</option>
+                        <option value="dessert">Dessert</option>
+                        <option value="appetizer">Appetizer</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading Indicator -->
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Finding delicious recipes...</p>
+    </div>
+
+    <!-- Results Section -->
+    <section class="results-section">
+        <div class="container">
+            <h2>Recipes</h2>
+            <div id="resultsGrid" class="results-grid">
+                <!-- Recipes will be inserted here by JavaScript -->
+                <div class="no-results">
+                    <i class="fas fa-utensils"></i>
+                    <p>Search for recipes to see results here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Favorites Section -->
+    <section class="favorites-section" id="favorites">
+        <div class="container">
+            <h2>Your Favorites <span id="favoriteCount">(0)</span></h2>
+            <div id="favoritesGrid" class="favorites-grid">
+                <!-- Favorites will be inserted here -->
+                <div class="empty-favorites">
+                    <i class="fas fa-heart"></i>
+                    <p>No favorite recipes yet. Click the heart icon to save some!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about">
+        <div class="container">
+            <p>Recipe Finder &copy; 2023 | Powered by Spoonacular API</p>
+            <p>This project is for educational purposes.</p>
+        </div>
+    </footer>
+
+    <!-- Recipe Modal -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent">
+                <!-- Recipe details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
