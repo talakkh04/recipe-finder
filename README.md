@@ -1,25 +1,34 @@
-# recipe-finder
-A web application to find recipes based on ingredients
-# Recipe Finder App
+# 🍳 Recipe Finder App
 
-A responsive web application that helps users find recipes based on ingredients they have on hand.
+A responsive web application that helps users discover recipes based on available ingredients. Built with vanilla JavaScript and integrated with the Spoonacular API.
 
-## Features
-- 🔍 Search recipes by ingredients
-- 🥗 Filter by diet, cuisine, and meal type
-- ❤️ Save favorite recipes (local storage)
-- 📱 Fully responsive design
-- 🔄 Real-time API integration
+![Recipe Finder Screenshot](https://via.placeholder.com/800x400.png?text=Recipe+Finder+Screenshot)
 
-## Tech Stack
-- HTML5, CSS3, JavaScript (ES6+)
-- Spoonacular API
-- LocalStorage for favorites
-- Font Awesome icons
+## ✨ Features
+- 🔍 **Ingredient-based search** - Find recipes with what you have
+- 🥗 **Advanced filtering** - By diet, cuisine, and meal type
+- ❤️ **Favorites system** - Save recipes using LocalStorage
+- 📱 **Responsive design** - Works on all devices
+- ⚡ **Fast API integration** - Real-time recipe data
 
-## Setup Instructions
+## 🛠️ Tech Stack
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+- **API:** [Spoonacular Food API](https://spoonacular.com/food-api)
+- **Icons:** Font Awesome
+- **Deployment:** GitHub Pages
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/recipe-finder.git
-   cd recipe-finder
+## 🚀 Quick Start
+
+### 1. Get API Key
+1. Sign up at [Spoonacular](https://spoonacular.com/food-api)
+2. Get your free API key (150 requests/day)
+
+### 2. Run Locally
+```bash
+# Clone the repository
+git clone https://github.com/talakh04/recipe-finder.git
+
+# Navigate to project
+cd recipe-finder
+
+# Open in browser
